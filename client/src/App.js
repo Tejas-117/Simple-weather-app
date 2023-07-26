@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import searchIcon from './assets/search.png';
 import humidityIcon from './assets/humidity.png';
 import cloudsIcon from './assets/clouds.png';
@@ -12,9 +12,6 @@ function App() {
   const [weatherData, setWeatherData] = useState({});
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-  }, [weatherData])
-
   async function fetchData(e) {
     e.preventDefault();
 
@@ -25,7 +22,7 @@ function App() {
 
     setMessage("Fetching data...");
 
-    const res = await fetch(`http://localhost:8000/api/data/?city=${city.toLowerCase()}`)
+    const res = await fetch(`${process.env.REACT_APP_BASE_URL}/api/data/?city=${city.toLowerCase()}`)
     const { data, message: description } = await res.json();
     
     if(res.status === 200) {

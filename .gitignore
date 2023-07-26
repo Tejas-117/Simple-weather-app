@@ -6,10 +6,12 @@ __pycache__
 db.sqlite3
 media
 .env
+static/
 
 # React # 
 node_modules/
 package-lock.json
+build/
 
 # vscode #
 .vscode
