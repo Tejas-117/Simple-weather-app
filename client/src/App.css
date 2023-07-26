@@ -34,8 +34,8 @@
 .submit-btn{
   padding: 4px;
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border: none;
   margin-left: 10px;
   cursor: pointer;
@@ -155,6 +155,7 @@
 
   .left-container, .right-container {
     width: 100%;
+    padding: 20px;
   }
 
   .right-container {
@@ -172,11 +173,17 @@
     text-align: center;
   }
 
-  .left-container, .right-container {
-    padding: 10px;
+  .right-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .right-container > div > div {
+    flex-direction: column;
   }
 
   .right-container {
-    width: 100%;
+    font-size: 0.9rem;
   }
 }

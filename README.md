@@ -6,6 +6,10 @@ This is a simple web app with a single end point in the api to retrieve weather 
 ###### Technologies used 
 ReactJS, Django, DjangoRestFramework
 
+# Live site URL
+
+[Weather App](https://simple-weather-app-3f6x.vercel.app/)
+
 # Installation
 
 Fork the repository or clone it locally using the command  `git clone https://github.com/Tejas-117/Simple-weather-app` and then `cd Simple-weather-app`
